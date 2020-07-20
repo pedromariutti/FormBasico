@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Peça sua malinha</title>
+    <meta charset="utf-8" />
+    <link href="style.css" rel="stylesheet" media="all" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,400&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <form action="https://formspree.io/xpzyyyog" method="POST" name="malinha">
+
+            <h1>Peça a sua malinha!</h1>
+            <div class="dados">
+                <input type="text" class="nome" placeholder="  Nome" required="required" name="nome" /><br>
+                <input type="email" class="email" placeholder="  Email" required="required" name="email" /><br>
+                <input type="tel" class="fone" placeholder="  Telefone" required="required" name="fone" /><br>
+                <input type="text" class="end" placeholder="  Endereço" required="required" name="endereço" /><br>
+            </div>
+
+            <div class="estilo">
+                <p> Qual o seu estilo? * </p> 
+
+                <input type="radio" id="classico" name="estilo" value="classico" required="required">
+                <label for="classico"> Clássico </label> <br>
+
+                <input type="radio" id="moderno" name="estilo" value="moderno" required="required">
+                <label for="moderno"> Moderno </label> <br>
+            </div>
+
+            <div class="tamanho">
+                <p> Qual o seu tamanho? *</p>
+
+                <input type="radio" id="sizeP" name="tamanho" value="P" required="required">
+                <label for="sizeP"> P </label><br>
+               
+                <input type="radio" id="sizeM" name="tamanho" value="M" required="required">
+                <label for="sizeM"> M </label><br>
+               
+                <input type="radio" id="sizeG" name="tamanho" value="G" required="required">
+                <label for="sizeG"> G </label><br><br>
+
+            </div>
+
+            <div class="botao">
+                <input type="submit" class="enviar" onclick="Enviar();" value="Solicitar minha malinha!" />
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
